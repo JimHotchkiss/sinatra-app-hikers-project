@@ -1,0 +1,5 @@
+~ Right or wrong, I decided to review some html and css first.  In addition to the  functionality of this MVC app, I want to offer some simple styling
+~ I create a repository on GitHub, and have made a few initial commits, adding a README, .gitignore, index.html and an images folder.
+~ I was able to open index.html in the browser (and spent way too much time patting myself on the back for that one).
+~ I am now looking at the file structure of a Sinatra app, and thinking about the gems I will need.  
+  * 
