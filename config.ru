@@ -1,13 +1,12 @@
-require 'config/environment'
-require 'sinatra'
+require './config/environment'
 
-require_relative 'app/controller/application_controller'
+if ActiveRecord::Migrator.needs_migration?
+  raise 'Migrations are pending. Run `rake db:migrate` to resolve the issue.'
+end
 
-use Rack::Static, :urls => ['/css'], :root => 'public' # Rack fix allows seeing the css folder.
-
-
+set :public_folder, Proc.new { File.join(root, "public") }
 
 use Rack::MethodOverride
 
-# use OtherControllers ~ be sure to add to require_relative
+
 run ApplicationController

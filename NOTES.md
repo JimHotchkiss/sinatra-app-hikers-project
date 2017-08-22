@@ -10,3 +10,6 @@
 ~ Now add, ActiveRecord::Base to model
 ~ Now, addinga Rakefile
   * Ran bundle install  ~ got Gemfile.lock
+~ First migration was successful.  Review/lookup w/in Gemfile difference between 'Development' and 'Production'
+  * These are dependencies. Meaning, if you are building (Development), using a particular database gem, like sqlite3, but when you're producing (Production), you may be using a different database gem, Posgres.  You can break it up, so when you bundle install, bundler knows what to install for which phase.
+~ Before breaking for lunch, make your first show action, get '/' do, to render the index.erb page.  

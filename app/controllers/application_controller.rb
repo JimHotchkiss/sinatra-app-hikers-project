@@ -1,6 +1,16 @@
 class ApplicationController < Sinatra::Base
-  set :views, Proc.new { File.join(root, "../views/") }
-  register Sinatra::Twitter::Bootstrap::Assets
 
-  
+  configure do
+		set :views, 'app/views' #this allows me to set my 'views' path
+		enable :sessions
+		set :session_secret, "security_password"
+	end
+
+  get '/' do 
+    erb :index
+  end 
+
+
+
+
 end 
