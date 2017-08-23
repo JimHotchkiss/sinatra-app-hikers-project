@@ -15,3 +15,10 @@
 ~ Before breaking for lunch, make your first show action, get '/' do, to render the index.erb page.  
 ~ After a long day of wrestling with github and my local environment, I think, after some help with a Learn coach, have things straightened out.  We'll see!
 ~ So, outline the functionality of the app, draw out the relationships, and begin to build the controller actions.  
+~ This morning (Wednesday), before I get started with the functionality of the app, I am going to set up and link the css stylesheet
+  * So I made a css directory, 'parent', and added a css stylesheet called 'style.css'
+  * Now I have to tell my html page(s) stylesheet by making a link tag in the html page
+    # <link rel="stylesheet" href="/style.css">
+    !!! Got css and index.erb linked up and talking !!!
+~ Enough css review for the day, on to building out the database, relationships and working on CRUD.
+~ Tomorrow will begin looking at bootstrap and making an layout.erb page
