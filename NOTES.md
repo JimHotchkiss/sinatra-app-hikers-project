@@ -22,3 +22,5 @@
     !!! Got css and index.erb linked up and talking !!!
 ~ Enough css review for the day, on to building out the database, relationships and working on CRUD.
 ~ Tomorrow will begin looking at bootstrap and making an layout.erb page
+
+~ I need to add to my user 'email' and 'password,' and change the column name from 'name' to 'username'.  
